@@ -168,5 +168,5 @@ vite.config.ts.timestamp-*
 # typescript
 next-env.d.ts
 
-/app/generated/prisma
 .DS_Store
+*/src/app/generated/prisma
