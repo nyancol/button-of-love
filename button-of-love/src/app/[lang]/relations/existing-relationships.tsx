@@ -26,10 +26,10 @@ export default function ExistingRelationships({ myself, dict }: { myself: Public
   if (!relations || relationsList.length === 0) {
     return (
       <div className="border border-green-400 border-dashed p-6 bg-gray-900 bg-opacity-20">
-        <h2 className="text-yellow-400 text-lg mb-4">
+        <h2 className="text-lg mb-4">
           {dict.relationManager.yourRelationshipsTitle}
         </h2>
-        <div className="text-green-600 ascii-art">
+        <div className="ascii-art">
           {dict.relationManager.noRelationships}
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function ExistingRelationships({ myself, dict }: { myself: Public
   }
   return (
     <div className="border border-green-400 border-dashed p-6 bg-gray-900 bg-opacity-20">
-      <h2 className="text-yellow-400 text-lg mb-4">
+      <h2 className="text-lg mb-4">
         {dict.relationManager.yourRelationshipsTitleCount.replace('{count}', relationsList.length)}
       </h2>
       <div className="space-y-4">
@@ -61,7 +61,7 @@ export default function ExistingRelationships({ myself, dict }: { myself: Public
           const totalLove = myLoveCount + partnerLoveCount;
           return (
             <div key={relation.id} className="border border-green-600 border-dashed p-4 bg-black bg-opacity-40">
-              <div className="ascii-art text-green-400 mb-3">
+              <div className="ascii-art mb-3">
                 {dict.relationManager.relationshipSummary
                   .replace('{partner}', partnerMember?.user?.first_name || dict.relationManager.unknownUser)
                   .replace('{id}', relation.id.slice(0, 8))

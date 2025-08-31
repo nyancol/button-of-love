@@ -8,19 +8,19 @@ import type { PublicUser, Relation as RelationType, RelationMember, LoveCounter 
 
 function LoveCounter({ lover, lovee, counter, dict }: { lover: string, lovee: string, counter: number, dict: any }) {
     return (
-        <div className="border border-green-400 border-dashed p-4 mb-4 bg-gray-900 bg-opacity-20">
-            <div className="ascii-art text-green-400">
-                <div className="text-yellow-400 mb-2">
+        <div className="border border-dashed p-4 mb-4" style={{ borderColor: 'var(--foreground)', background: 'rgba(0,0,0,0.2)' }}>
+            <div className="ascii-art" style={{ color: 'var(--foreground)' }}>
+                <div className="mb-2" style={{ color: 'var(--foreground)' }}>
                     {dict.relation.loveCounter.loves.replace('{lover}', lover).replace('{lovee}', lovee)}
                 </div>
-                <div className="text-red-400 text-xl">
+                <div className="text-xl" style={{ color: 'var(--foreground)' }}>
                     {counter}
                 </div>
-                <div className="text-yellow-400 mb-2">
+                <div className="mb-2" style={{ color: 'var(--foreground)' }}>
                     {dict.relation.loveCounter.manyTimes}
                 </div>
                 {counter === 0 && (
-                    <div className="text-gray-500 text-sm mt-1">
+                    <div className="text-sm mt-1" style={{ color: 'var(--muted)' }}>
                         {dict.relation.loveCounter.noLove}
                     </div>
                 )}
@@ -44,6 +44,7 @@ function LoveButton({ relation, myself, setMyCount, dict }: { relation: Relation
                 variant="love" 
                 onClick={handleLove}
                 className="text-lg px-8 py-4"
+                style={{ background: 'var(--foreground)', color: 'var(--background)' }}
             >
                 {dict.relation.loveButton.sendLove}
             </Button>
@@ -82,8 +83,8 @@ export default function RelationPageClient({ relationId, dict }: { relationId: s
     }, [relation, myself, partner]);
     if (myselfError || relationError || partnerError) {
         return (
-            <div className="min-h-screen bg-black text-red-400 font-mono p-8">
-                <div className="border border-red-400 border-dashed p-6 bg-red-900 bg-opacity-20">
+            <div className="min-h-screen font-mono p-8" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
+                <div className="border border-dashed p-6" style={{ borderColor: 'var(--foreground)', background: 'rgba(0,0,0,0.2)' }}>
                     <div className="ascii-art">
                         {dict.relation.error.failedToLoad}
                     </div>
@@ -93,9 +94,9 @@ export default function RelationPageClient({ relationId, dict }: { relationId: s
     }
     if (!myself || !relation || !partner) {
         return (
-            <div className="min-h-screen bg-black text-green-400 font-mono p-8">
+            <div className="min-h-screen font-mono p-8" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
                 <div className="text-center">
-                    <div className="ascii-art text-yellow-400 cursor-blink">
+                    <div className="ascii-art cursor-blink">
                         {dict.relation.loading.loveTerminal}
                     </div>
                 </div>
@@ -103,18 +104,18 @@ export default function RelationPageClient({ relationId, dict }: { relationId: s
         );
     }
     return (
-        <div className="min-h-screen bg-black text-green-400 font-mono p-8">
+        <div className="min-h-screen font-mono p-8" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
             {/* Navigation */}
             <div className="mb-6">
                 <Link href="/relations">
-                    <Button variant="ascii" className="mb-4">
+                    <Button variant="ascii" className="mb-4" style={{ background: 'var(--background)', color: 'var(--foreground)', borderColor: 'var(--foreground)' }}>
                         {dict.relation.navigation.backToManager}
                     </Button>
                 </Link>
             </div>
             {/* ASCII Art Header */}
             <div className="text-center mb-8">
-                <div className="ascii-art text-green-400 mb-4">
+                <div className="ascii-art mb-4" style={{ color: 'var(--foreground)' }}>
                     {dict.relation.header}
                 </div>
             </div>

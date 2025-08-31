@@ -39,10 +39,10 @@ export default function ReceivedInvitations({ myself, dict }: { myself: PublicUs
   if (pendingInvitations.length === 0) {
     return (
       <div className="border border-blue-400 border-dashed p-6 bg-gray-900 bg-opacity-20">
-        <h2 className="text-yellow-400 text-lg mb-4">
+        <h2 className="text-lg mb-4">
           {dict.relationManager.receivedInvitationsTitle}
         </h2>
-        <div className="text-blue-400 ascii-art">
+        <div className="ascii-art">
           {dict.relationManager.noPendingInvitations}
         </div>
       </div>
@@ -50,20 +50,20 @@ export default function ReceivedInvitations({ myself, dict }: { myself: PublicUs
   }
   return (
     <div className="border border-blue-400 border-dashed p-6 bg-gray-900 bg-opacity-20">
-      <h2 className="text-yellow-400 text-lg mb-4">
+      <h2 className="text-lg mb-4">
         {dict.relationManager.receivedInvitationsTitleCount.replace('{count}', pendingInvitations.length)}
       </h2>
       <div className="space-y-4">
         {pendingInvitations.map((invitation) => (
           <div key={invitation.id} className="border border-blue-600 p-4 bg-black">
-            <div className="text-blue-400 mb-3">
+            <div className="mb-3">
               <div className="text-lg font-bold">
                 {dict.relationManager.fromUser.replace('{username}', invitation.inviter?.username || dict.relationManager.unknownUser)}
               </div>
               <div className="text-sm">
                 {invitation.inviter?.first_name} {invitation.inviter?.last_name}
               </div>
-              <div className="text-xs text-blue-600 mt-1">
+              <div className="text-xs mt-1">
                 {dict.relationManager.sentDate.replace('{date}', new Date(invitation.created_at).toLocaleDateString())}
               </div>
             </div>

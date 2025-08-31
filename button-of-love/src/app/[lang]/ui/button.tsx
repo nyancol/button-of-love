@@ -12,8 +12,8 @@ export function Button({ children, className, variant = 'default', ...rest }: Bu
       className={clsx(
         // Base styles - Candybox ASCII aesthetic
         'font-mono text-sm border transition-all duration-200',
-        'bg-black text-green-400 border-green-400',
-        'hover:bg-green-400 hover:text-black',
+        'bg-black border-green-400',
+        'hover:bg-white hover:text-black',
         'active:bg-yellow-400 active:text-black',
         'focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50',
         'disabled:opacity-50 disabled:cursor-not-allowed',

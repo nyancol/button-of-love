@@ -1,22 +1,16 @@
 @import "tailwindcss";
 
-:root {
-  /* Candybox-inspired color scheme */
+ :root {
   --background: #000000;
-  --foreground: #00ff00;
-  --primary: #ffff00;
-  --secondary: #00aa00;
-  --muted: #004400;
-  --border: #00ff00;
-  --accent: #ff00ff;
+  --foreground: #ffffff;
+  --primary: #ffffff;
+  --secondary: #ffffff;
+  --muted: #888888;
+  --border: #ffffff;
+  --accent: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #00ff00;
-  }
-}
+
 
 body {
   background: var(--background);
@@ -26,13 +20,15 @@ body {
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 
 /* ASCII Art Components */
-.ascii-art {
+ .ascii-art {
   font-family: 'Courier New', monospace;
   white-space: pre;
   line-height: 1;
+  color: var(--foreground);
 }
 
 /* Blinking cursor effect */
@@ -41,7 +37,8 @@ body {
   51%, 100% { opacity: 0; }
 }
 
-.cursor-blink::after {
+ .cursor-blink::after {
   content: '_';
   animation: blink 1s infinite;
+  color: var(--foreground);
 }

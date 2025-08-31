@@ -30,9 +30,9 @@ export default function RelationshipManagerClient({ dict }: { dict: any }) {
   // Loading state
   if (!myself) {
     return (
-      <div className="min-h-screen bg-black text-green-400 font-mono p-8">
+      <div className="min-h-screen bg-black font-mono p-8">
         <div className="text-center">
-          <div className="ascii-art text-yellow-400 cursor-blink">
+          <div className="ascii-art cursor-blink">
             {dict.relation.loading.loveTerminal}
           </div>
         </div>
@@ -41,13 +41,13 @@ export default function RelationshipManagerClient({ dict }: { dict: any }) {
   }
 
   return (
-    <div className="min-h-screen bg-black text-green-400 font-mono p-8">
+    <div className="min-h-screen bg-black font-mono p-8">
       {/* ASCII Art Header */}
       <div className="text-center mb-8">
-        <div className="ascii-art text-green-400 mb-4">
+        <div className="ascii-art mb-4">
           {dict.header.replace('{firstName}', myself.first_name)}
         </div>
-        <div className="text-yellow-400 text-lg cursor-blink">
+        <div className="text-lg cursor-blink">
           {dict.relationManager.pageSubtitle}
         </div>
       </div>
