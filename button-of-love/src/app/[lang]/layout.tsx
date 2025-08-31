@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ lang: 'en-US' }, { lang: 'fr-FR' }]
+  return [{ lang: 'en' }, { lang: 'fr' }]
 }
 
 export default async function RootLayout({
@@ -26,10 +26,11 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: 'en-US' | 'fr-FR' }>;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
   return (
-    <html lang={(await params).lang}>
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

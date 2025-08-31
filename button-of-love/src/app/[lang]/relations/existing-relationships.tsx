@@ -66,9 +66,7 @@ export default function ExistingRelationships({ myself, dict }: { myself: Public
                   .replace('{partner}', partnerMember?.user?.first_name || dict.relationManager.unknownUser)
                   .replace('{id}', relation.id.slice(0, 8))
                   .replace('{myLove}', myLoveCount)
-                  .replace('{partnerLove}', partnerLoveCount)
-                  .replace('{totalLove}', totalLove)
-                  .replace('{level}', (Math.floor(totalLove / 10) + 1).toString())}
+                  .replace('{partnerLove}', partnerLoveCount)}
               </div>
               <Link href={`/relations/${relation.id}`}>
                 <Button variant="love" className="w-full">

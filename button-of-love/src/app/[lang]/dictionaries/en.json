@@ -55,7 +55,7 @@
     "yourRelationshipsTitle": "> YOUR RELATIONSHIPS",
     "yourRelationshipsTitleCount": "> YOUR RELATIONSHIPS ({count})",
     "noRelationships": "No active relationships found.\n\nYou can:\n• Send invitations above ↑\n• Check for received invitations ↑\n• Wait for someone to invite you\n\nOnce you accept an invitation,\nyour relationship will appear here!",
-    "relationshipSummary": "♥ Relationship with: {partner}\n  ID: {id}...\n  Your Love Sent: {myLove} ♥\n  Love Received: {partnerLove} ♥\n  Total Love: {totalLove} ♥\n  Level: {level}",
+    "relationshipSummary": "♥ Relationship with: {partner}\n  ID: {id}...\n  Your Love Sent: {myLove} ♥\n  Love Received: {partnerLove} ♥",
     "enterLoveTerminal": "ENTER LOVE TERMINAL",
     "pageSubtitle": "> Manage your love connections"
   },

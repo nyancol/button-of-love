@@ -7,8 +7,8 @@
 import { getDictionary } from '@/app/[lang]/dictionaries';
 import RelationPageClient from './relation-page-client';
 
-export default async function RelationPageServer({ params }: { params: Promise<{ lang: 'en' | 'fr', relationId: string }> }) {
+export default async function RelationPageServer({ params }: { params: Promise<{ lang: string, relationId: string }> }) {
     const { lang, relationId } = await params;
-    const dict = await getDictionary(lang);
+    const dict = await getDictionary(lang === 'en' ? 'en' : 'fr');
     return <RelationPageClient relationId={relationId} dict={dict} />;
 }

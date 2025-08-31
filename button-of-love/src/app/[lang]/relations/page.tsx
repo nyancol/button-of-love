@@ -11,8 +11,8 @@
 import { getDictionary } from '../dictionaries';
 import RelationshipManagerClient from './relationship-manager-client';
 
-export default async function RelationshipManagerServer({ params }: { params: Promise<{ lang: 'en' | 'fr' }> }) {
+export default async function RelationshipManagerServer({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
-    const dict = await getDictionary(lang);
+    const dict = await getDictionary(lang === 'en' ? 'en' : 'fr');
     return <RelationshipManagerClient dict={dict} />;
 }
