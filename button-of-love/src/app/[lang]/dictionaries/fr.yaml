@@ -1,0 +1,116 @@
+login:
+  prompt: "> Veuillez entrer vos identifiants pour continuer"
+  usernameLabel: "Nom d'utilisateur :"
+  usernamePlaceholder: "nom_utilisateur"
+  passwordLabel: "Mot de passe :"
+  passwordPlaceholder: "••••••••"
+  authenticating: "AUTHENTIFICATION..."
+  loginButton: "CONNEXION"
+  errorPrefix: "ERREUR : "
+relation:
+  loveCounter:
+    loves: "{lover} aime {lovee}"
+    manyTimes: "plusieurs fois"
+    noLove: "Aucun amour envoyé pour l'instant..."
+  loveButton:
+    sendLove: "ENVOYER DE L'AMOUR"
+  error:
+    failedToLoad: |
+      ERREUR : Échec du chargement des données
+      Veuillez vérifier votre connexion et réessayer.
+  loading:
+    loveTerminal: |
+      CHARGEMENT DU TERMINAL D'AMOUR...
+      
+           ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+           ♥                   ♥
+           ♥   CONNEXION...    ♥
+           ♥                   ♥
+           ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+      
+      Établissement de la connexion d'amour...
+  navigation:
+    backToManager: "← RETOUR AU GESTIONNAIRE DE RELATIONS"
+
+header: |
+  
+  ╔══════════════════════════════════╗
+  ║      LE BOUTON DE L'AMOUR v1.0   ║
+  ╚══════════════════════════════════╝
+
+welcome:
+  version: "v0.1"
+  back: "← RETOUR"
+  title: "Bienvenue dans le Terminal de l'Amour"
+  asciiArt: |
+    
+    ██████╗ ██╗   ██╗████████╗████████╗ ██████╗ ███╗   ██╗
+    ██╔══██╗██║   ██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗  ██║
+    ██████╔╝██║   ██║   ██║      ██║   ██║   ██║██╔██╗ ██║
+    ██╔══██╗██║   ██║   ██║      ██║   ██║   ██║██║╚██╗██║
+    ██████╔╝╚██████╔╝   ██║      ██║   ╚██████╔╝██║ ╚████║
+    ╚═════╝  ╚═════╝    ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═══╝
+    
+     ██████╗ ███████╗    ██╗      ██████╗ ██╗   ██╗███████╗
+    ██╔═══██╗██╔════╝    ██║     ██╔═══██╗██║   ██║██╔════╝
+    ██║   ██║█████╗      ██║     ██║   ██║██║   ██║█████╗  
+    ██║   ██║██╔══╝      ██║     ██║   ██║╚██╗ ██╔╝██╔══╝  
+    ╚██████╔╝██║         ███████╗╚██████╔╝ ╚████╔╝ ███████╗
+     ╚═════╝ ╚═╝         ╚══════╝ ╚═════╝   ╚═══╝  ╚══════╝
+
+relationManager:
+  sendInvitationTitle: "> ENVOYER UNE INVITATION"
+  searchPlaceholder: "Rechercher des utilisateurs par nom d'utilisateur, email ou nom..."
+  sending: "ENVOI..."
+  invite: "INVITER"
+  noUsersFound: "Aucun utilisateur trouvé pour \"{query}\""
+  receivedInvitationsTitle: "> INVITATIONS REÇUES"
+  receivedInvitationsTitleCount: "> INVITATIONS REÇUES ({count})"
+  noPendingInvitations: |
+    Aucune invitation en attente.
+    
+    Revenez plus tard pour de nouvelles
+    demandes de relation !
+  fromUser: "De : {username}"
+  unknownUser: "Utilisateur inconnu"
+  sentDate: "Envoyé : {date}"
+  processing: "TRAITEMENT..."
+  accept: "ACCEPTER"
+  decline: "REFUSER"
+  yourRelationshipsTitle: "> VOS RELATIONS"
+  yourRelationshipsTitleCount: "> VOS RELATIONS ({count})"
+  noRelationships: |
+    Aucune relation active trouvée.
+    
+    Vous pouvez :
+    • Envoyer des invitations ci-dessus ↑
+    • Vérifier les invitations reçues ↑
+    • Attendre qu'on vous invite
+    
+    Une fois que vous acceptez une invitation,
+    votre relation apparaîtra ici !
+  relationshipSummary: |
+    ♥ Relation avec : {partner}
+      ID : {id}...
+      Votre amour envoyé : {myLove} ♥
+      Amour reçu : {partnerLove} ♥
+  enterLoveTerminal: "ENTRER DANS LE BUTON DE L'AMOUR"
+  pageSubtitle: "> Gérez vos connexions d'amour"
+
+loading:
+  loginTerminal: "Chargement du terminal de connexion..."
+
+action:
+  enter: "ENTRER DANS LE BOUTON DE L'AMOUR"
+  hint: "Cliquez ci-dessus pour commencer votre voyage d'amour"
+
+footer: |
+  
+  ┌─────────────────────────────────────────────┐
+  │                                             │
+  │    "L'amour n'est pas qu'un sentiment,      │
+  │     c'est un choix fait chaque jour."       │
+  │                                             │
+  │          - Le Terminal de l'Amour v1.0      │
+  │                                             │
+  └─────────────────────────────────────────────┘

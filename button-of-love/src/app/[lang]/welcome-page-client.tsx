@@ -52,34 +52,6 @@ export default function WelcomePageClient({ dict }: WelcomePageClientProps) {
       </div>
 
       {/* Game Description */}
-      <div className="max-w-4xl mx-auto mb-12">
-        <div className="border border-green-400 border-dashed p-6 mb-6 bg-gray-900 bg-opacity-20">
-          <h2 className="text-lg mb-4">
-            {dict.systemDescription.title}
-          </h2>
-          <div className="space-y-2 text-sm">
-            {dict.systemDescription.items.map((item: string, i: number) => <p key={i}>{item}</p>)}
-          </div>
-        </div>
-
-        <div className="border border-green-400 border-dashed p-6 mb-6 bg-gray-900 bg-opacity-20">
-          <h2 className="text-lg mb-4">
-            {dict.howToPlay.title}
-          </h2>
-          <div className="space-y-2 text-sm">
-            {dict.howToPlay.items.map((item: string, i: number) => <p key={i}>{item}</p>)}
-          </div>
-        </div>
-
-        <div className="border border-green-400 border-dashed p-6 mb-6 bg-gray-900 bg-opacity-20">
-          <h2 className="text-lg mb-4">
-            {dict.features.title}
-          </h2>
-          <div className="space-y-2 text-sm">
-            {dict.features.items.map((item: string, i: number) => <p key={i}>{item}</p>)}
-          </div>
-        </div>
-      </div>
 
       {/* Action Buttons */}
       <div className="text-center mb-12">
