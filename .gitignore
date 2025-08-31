@@ -169,4 +169,4 @@ vite.config.ts.timestamp-*
 next-env.d.ts
 
 /app/generated/prisma
-
+.DS_Store
