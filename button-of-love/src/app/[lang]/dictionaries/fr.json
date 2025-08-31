@@ -1,0 +1,96 @@
+{
+  "login": {
+    "header": "\n╔══════════════════════════════════╗\n║        TERMINAL DE CONNEXION     ║\n║   AUTHENTIFICATION REQUISE       ║\n╚══════════════════════════════════╝\n",
+    "prompt": "> Veuillez entrer vos identifiants pour continuer",
+    "usernameLabel": "Nom d'utilisateur :",
+    "usernamePlaceholder": "nom_utilisateur",
+    "passwordLabel": "Mot de passe :",
+    "passwordPlaceholder": "••••••••",
+    "authenticating": "AUTHENTIFICATION...",
+    "loginButton": "CONNEXION",
+    "errorPrefix": "ERREUR : ",
+    "status": "\n     ┌─────────────────────┐\n     │ TERMINAL D'AMOUR    │\n     │  STATUT : ATTENTE   │\n     └─────────────────────┘\n"
+  },
+  "relation": {
+    "loveCounter": {
+      "loves": "{lover} aime {lovee}",
+      "manyTimes": "plusieurs fois",
+      "noLove": "Aucun amour envoyé pour l'instant..."
+    },
+  "loveButton": {},
+    "error": {
+      "failedToLoad": "ERREUR : Échec du chargement des données\nVeuillez vérifier votre connexion et réessayer."
+    },
+    "loading": {
+      "loveTerminal": "CHARGEMENT DU TERMINAL D'AMOUR...\n\n     ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥\n     ♥                   ♥\n     ♥   CONNEXION...    ♥\n     ♥                   ♥\n     ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥\n\nÉtablissement de la connexion d'amour..."
+    },
+    "navigation": {
+      "backToManager": "← RETOUR AU GESTIONNAIRE DE RELATIONS"
+    }
+  },
+  "header": "\n╔══════════════════════════════════╗\n║      LE BOUTON DE L'AMOUR v1.0   ║\n╚══════════════════════════════════╝\n",
+  "welcome": {
+    "back": "← RETOUR",
+    "title": "Bienvenue dans le Terminal de l'Amour",
+    "asciiArt": "\n██████╗ ██╗   ██╗████████╗████████╗ ██████╗ ███╗   ██╗\n██╔══██╗██║   ██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗  ██║\n██████╔╝██║   ██║   ██║      ██║   ██║   ██║██╔██╗ ██║\n██╔══██╗██║   ██║   ██║      ██║   ██║   ██║██║╚██╗██║\n██████╔╝╚██████╔╝   ██║      ██║   ╚██████╔╝██║ ╚████║\n╚═════╝  ╚═════╝    ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═══╝\n\n ██████╗ ███████╗    ██╗      ██████╗ ██╗   ██╗███████╗\n██╔═══██╗██╔════╝    ██║     ██╔═══██╗██║   ██║██╔════╝\n██║   ██║█████╗      ██║     ██║   ██║██║   ██║█████╗  \n██║   ██║██╔══╝      ██║     ██║   ██║╚██╗ ██╔╝██╔══╝  \n╚██████╔╝██║         ███████╗╚██████╔╝ ╚████╔╝ ███████╗\n ╚═════╝ ╚═╝         ╚══════╝ ╚═════╝   ╚═══╝  ╚══════╝\n"
+  },
+  "relationManager": {
+    "sendInvitationTitle": "> ENVOYER UNE INVITATION",
+    "searchPlaceholder": "Rechercher des utilisateurs par nom d'utilisateur, email ou nom...",
+    "sending": "ENVOI...",
+    "invite": "INVITER",
+    "noUsersFound": "Aucun utilisateur trouvé pour \"{query}\"",
+    "receivedInvitationsTitle": "> INVITATIONS REÇUES",
+    "receivedInvitationsTitleCount": "> INVITATIONS REÇUES ({count})",
+    "noPendingInvitations": "Aucune invitation en attente.\n\nRevenez plus tard pour de nouvelles\ndemandes de relation !",
+    "fromUser": "De : {username}",
+    "unknownUser": "Utilisateur inconnu",
+    "sentDate": "Envoyé : {date}",
+    "processing": "TRAITEMENT...",
+    "accept": "ACCEPTER",
+    "decline": "REFUSER",
+    "yourRelationshipsTitle": "> VOS RELATIONS",
+    "yourRelationshipsTitleCount": "> VOS RELATIONS ({count})",
+    "noRelationships": "Aucune relation active trouvée.\n\nVous pouvez :\n• Envoyer des invitations ci-dessus ↑\n• Vérifier les invitations reçues ↑\n• Attendre qu'on vous invite\n\nUne fois que vous acceptez une invitation,\nvotre relation apparaîtra ici !",
+    "relationshipSummary": "♥ Relation avec : {partner}\n  ID : {id}...\n  Votre amour envoyé : {myLove} ♥\n  Amour reçu : {partnerLove} ♥\n  Amour total : {totalLove} ♥\n  Niveau : {level}",
+    "enterLoveTerminal": "ENTRER DANS LE TERMINAL DE L'AMOUR",
+    "pageSubtitle": "> Gérez vos connexions d'amour"
+  },
+  "loading": {
+    "loginTerminal": "Chargement du terminal de connexion..."
+  },
+  "systemDescription": {
+    "title": "> DESCRIPTION DU SYSTÈME",
+    "items": [
+      "• Connectez-vous avec votre bien-aimé(e) à travers le monde numérique",
+      "• Envoyez des jetons d'amour en appuyant sur le bouton sacré",
+      "• Regardez votre niveau de relation augmenter au fil du temps",
+      "• Découvrez la beauté minimaliste de l'amour en ASCII"
+    ]
+  },
+  "howToPlay": {
+    "title": "> COMMENT JOUER",
+    "items": [
+      "1. Connectez-vous pour accéder à votre terminal d'amour",
+      "2. Trouvez votre connexion de relation",
+      "3. Appuyez sur le bouton ENVOYER DE L'AMOUR pour transmettre ♥",
+      "4. Regardez les compteurs d'amour augmenter",
+      "5. Atteignez ensemble des niveaux de relation plus élevés"
+    ]
+  },
+  "features": {
+    "title": "> FONCTIONNALITÉS",
+    "items": [
+      "♥ Synchronisation de l'amour en temps réel",
+      "♥ Retour visuel en art ASCII",
+      "♥ Système de progression de la relation",
+      "♥ Esthétique de terminal rétro",
+      "♥ Design d'interaction minimaliste"
+    ]
+  },
+  "action": {
+    "enter": "ENTRER DANS LE TERMINAL DE L'AMOUR",
+    "hint": "Cliquez ci-dessus pour commencer votre voyage d'amour"
+  },
+  "footer": "\n┌─────────────────────────────────────────────┐\n│                                             │\n│    \"L'amour n'est pas qu'un sentiment,     │\n│     c'est un choix fait chaque jour.\"      │\n│                                             │\n│          - Le Terminal de l'Amour v1.0      │\n│                                             │\n└─────────────────────────────────────────────┘\n\n     Statut : En attente de l'entrée de l'utilisateur...\n     \n     Appuyez sur ENTRER DANS LE TERMINAL DE L'AMOUR pour continuer\n"
+}

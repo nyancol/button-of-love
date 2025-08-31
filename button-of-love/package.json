@@ -1,0 +1,42 @@
+{
+  "name": "button-of-love",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start"
+  },
+  "prisma": {
+    "seed": "tsx src/prisma/seed.ts"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@mermaid-js/mermaid-cli": "^11.9.0",
+    "@prisma/client": "^6.15.0",
+    "@prisma/extension-accelerate": "^2.0.2",
+    "bcrypt": "^6.0.0",
+    "clsx": "^2.1.1",
+    "jose": "^6.1.0",
+    "next": "15.5.2",
+    "next-auth": "5.0.0-beta.29",
+    "postgres": "^3.4.7",
+    "prisma": "^6.15.0",
+    "prisma-erd-generator": "^2.0.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swr": "^2.3.6",
+    "tsx": "^4.20.5",
+    "uuid": "^11.1.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
