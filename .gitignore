@@ -169,3 +169,4 @@ vite.config.ts.timestamp-*
 next-env.d.ts
 
 .DS_Store
+/button-of-love/src/app/generated
